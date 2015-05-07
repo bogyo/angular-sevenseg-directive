@@ -1,5 +1,8 @@
-# angular-sevenseg-directive
+# angular-sevensegment-directive
 
 Angular directive for seven-segment display.
 
-No JQUERY dependency needed
+No jQuery dependency needed
+
+How to use it
+-------------
