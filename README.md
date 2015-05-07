@@ -26,7 +26,7 @@ Where You would like to place your seven-segment display you need to refer to it
 ```html
   <sevenseg options="yourOptions"></sevenseg>
 ```
-or with html tag You can use other elements too (like <span> <p>)
+or with html tag You can use other elements too (like span, p)
 ```html
   <div sevenseg  options="yourOptions"></div>
 ```
@@ -38,6 +38,6 @@ You need to specify your options in an object in your module. You need to set up
 ```javascript
  $scope.yourOptions = {
     digits: 2,
-    value: "46"
+    value: 46
   };
 ```
