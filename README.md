@@ -20,15 +20,24 @@ You need to add the following code snippet to your html head section as well
 And register the seven-segment display directive in your application module:
 
 ```javascript
-angular.module('myApp', ['ngSevenseg']);
+angular.module('yourApp', ['ngSevenseg']);
 ```
-Where You would like to place your seven-segment display you need to refer to it.
+Where You would like to place your seven-segment display you need to refer to it. E.g.:
 ```html
-  <sevenseg options="YourOptions"></sevenseg>
+  <sevenseg options="yourOptions"></sevenseg>
 ```
-Or 
+or with html tag You can use other elements too (like <span> <p>)
 ```html
-  <span sevenseg  options="YourOptions"></span>
+  <div sevenseg  options="yourOptions"></div>
 ```
 
 ### Options
+
+You need to specify your options in an object in your module. You need to set up at least the value and the number of digits which You would like to display.
+
+```javascript
+ $scope.yourOptions = {
+    digits: 2,
+    value: "46"
+  };
+```
