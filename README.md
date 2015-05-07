@@ -17,10 +17,18 @@ You need to add the following code snippet to your html head section as well
 <script type="text/javascript" src="ng-sevenseg.js"></script>
 ```
 
-And inject `angularAwesomeSlider` in your application module:
+And register the seven-segment display directive in your application module:
 
 ```javascript
 angular.module('myApp', ['ngSevenseg']);
+```
+Where You would like to place your seven-segment display you need to refer to it.
+```html
+  <sevenseg options="YourOptions"></sevenseg>
+```
+Or 
+```html
+  <span sevenseg  options="YourOptions"></span>
 ```
 
 ### Options
