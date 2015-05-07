@@ -41,3 +41,4 @@ You need to specify your options in an object in your module. You need to set up
     value: 46
   };
 ```
+You have opportunity to customise other properties. It is not necessary, the directive will use its default settings if You do not overwrite them.
