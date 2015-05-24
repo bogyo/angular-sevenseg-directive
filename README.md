@@ -41,4 +41,26 @@ You need to specify your options in an object in your module. You need to set up
     value: 46
   };
 ```
-You have opportunity to customise other properties. It is not necessary, the directive will use its default settings if You do not overwrite them.
+You have opportunity to customise other properties. It is not necessary, the directive will use its default settings if You do not overwrite them. Possibilities: 
+
+```javascript
+ $scope.yourOptions = {
+    digits: 2,
+    value: 46,
+    
+  };
+```
+### Data binding
+If you would like to display dynamic numbers instead of static.
+In your view:
+```html
+  <sevenseg options="yourOptions" data="yourValue"></sevenseg>
+```
+In your controller: 
+```javascript
+  $scope.yourValue = "11";
+```
+If the value comes from user unput add to your view file 
+```html
+<input ng-model="yourValue" type="text"></input>
+```
