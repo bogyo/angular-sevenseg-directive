@@ -58,9 +58,13 @@ In your view:
 ```
 In your controller: 
 ```javascript
-  $scope.yourValue = "11";
+  $scope.yourValue = "5";
+  
+  $scope.yourOptions = {
+    digits: 1
+  };
 ```
-If the value comes from user unput add to your view file 
+If the value based on a user input, add to your view file the following:
 ```html
 <input ng-model="yourValue" type="text"></input>
 ```
